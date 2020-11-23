@@ -2,7 +2,7 @@ module.exports = {
   siteTitle: 'Meet Michael', // <title>
   manifestName: 'Resume',
   manifestShortName: 'Landing', // max 12 characters
-  manifestStartUrl: '/public',
+  manifestStartUrl: '/',
   manifestBackgroundColor: '#EE3399',
   manifestThemeColor: '#EE3399',
   manifestDisplay: 'standalone',
