@@ -7,7 +7,7 @@ module.exports = {
   manifestThemeColor: '#EE3399',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `/public/`, // This path is subpath of your hosting https://domain/portfolio
+  pathPrefix: `/`, // This path is subpath of your hosting https://domain/portfolio
   firstName: 'Michael-Andrew',
   lastName: 'Keays',
   // social
