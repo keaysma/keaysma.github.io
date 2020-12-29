@@ -16,12 +16,15 @@ export class Sidebar extends Component {
         { content: 'Skills', href: 'skills' },
         { content: 'Interests', href: 'interests' },
         { content: 'Awards', href: 'awards' },
+        // { content: 'My Resume', href: 'resume' },
       ],
+      isCollapsed: true
     };
   }
 
   render() {
-    const { tabs } = this.state;
+    const tabs = this.state.tabs;
+
     return (
       <nav
         className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
@@ -47,10 +50,11 @@ export class Sidebar extends Component {
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onClick={() => this.setState({isCollapsed : !this.state.isCollapsed})}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className={`${this.state.isCollapsed ? "collapse" : ""} navbar-collapse`} id="navbarSupportedContent">
           <Scrollspy
             items={tabs.map(s => s.href)}
             currentClassName="active"
@@ -60,15 +64,25 @@ export class Sidebar extends Component {
             {tabs.map((tab, i) => {
               const { href, content } = tab;
               return (
-                <li className="nav-item" key={href}>
+                <li 
+                  className="nav-item" 
+                  key={href}
+                  onClick={() => this.setState({isCollapsed : true})}
+                >
                   <Scroll type="id" element={href}>
-                    <a className="nav-link" href={`#${href}`}>
+                    <a className="nav-link" href={`#${href}`} >
                       {content}
                     </a>
                   </Scroll>
                 </li>
               );
             })}
+
+            <li className="nav-item" key="resume">
+              <a className="nav-link" href="https://www.dropbox.com/s/n1oaw3f66524c7k/Resume.pdf">
+                My Resume
+              </a>
+            </li>
           </Scrollspy>
         </div>
       </nav>

@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
 import '../assets/sass/resume.scss';
+import '../assets/mfizz/font-mfizz.css';
 
 class Layout extends Component {
   render() {
