@@ -79,7 +79,7 @@ export class Sidebar extends Component {
             })}
 
             <li className="nav-item" key="resume">
-              <a className="nav-link" href="https://www.dropbox.com/s/n1oaw3f66524c7k/Resume.pdf">
+              <a className="nav-link" href="/Resume.pdf">
                 My Resume
               </a>
             </li>

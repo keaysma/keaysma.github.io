@@ -1,3 +1,9 @@
+# Original nameservers
+```
+ns01.000webhost.com
+ns02.000webhost.com
+```
+
 # Skills
 [x] Python
 [m] C++
