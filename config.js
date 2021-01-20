@@ -33,7 +33,7 @@ module.exports = {
       url: 'https://dev.to/keaysma',
     },
   ],
-  email: 'me@michaelandrewkeays.com',
+  email: 'mail@keays.io',
   phone: '(703) 915-4386',
   address: 'Annandale, VA',
 };
