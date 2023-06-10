@@ -11,7 +11,7 @@
     "email": "me@michaelandrewkeays.com"
   },
   "dependencies": {
-    "gatsby": "^2.27.5",
+    "gatsby": "^4.25.7",
     "gatsby-cli": "^2.14.1",
     "gatsby-plugin-manifest": "^2.3.1",
     "gatsby-plugin-offline": "^3.1.0",
